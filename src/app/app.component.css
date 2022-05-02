@@ -1,0 +1,18 @@
+.logo-image{
+  width: 80px;
+  height: 80px;]
+  overflow: hidden;
+  margin-top: 35%;
+  margin-left: 200%;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+mat-toolbar{
+  background-color: #222222;
+}
+mat-button{
+
+}
