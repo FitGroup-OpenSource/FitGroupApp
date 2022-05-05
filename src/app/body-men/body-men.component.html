@@ -1,0 +1,129 @@
+
+
+
+
+<mat-grid-list class="grid" #grid [cols]="cols" Ratio ="100:11" gutterSize="20px" >
+  <mat-grid-tile>
+
+    <mat-card class="card" >
+      <mat-card-header>
+        <mat-card-title>Trapeze</mat-card-title>
+      </mat-card-header>
+      <img class="img"mat-card-image src="../assets/body-mean/trapecio.png"class="img-male-trapeze">
+      <mat-card-content>
+        <p>
+          This silhouette tends to have: Shoulders wider than the hips.
+          The narrowest part of this body is the waist.</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button [routerLink]="'/grain'"mat-button style=
+          "background-color:#86682a; color:white">
+          GRAIN
+        </button>
+        <button [routerLink]="'/vegetables'" mat-button style=
+          "background-color:#4ce141; color:white">
+          VEGETABLES
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card class="card" >
+      <mat-card-header>
+        <mat-card-title>Oval</mat-card-title>
+      </mat-card-header>
+      <img class="img"mat-card-image src="../assets/body-mean/ovalo.png"class="img-male-oval">
+      <mat-card-content>
+        <p>
+          It is a silhouette that blurs the figure of the
+          body because it is wider right at the waist, making it
+          stand out above the shoulders and hips.</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button [routerLink]="'/fruits'" mat-button style=
+          "background-color:#e39121; color:white">
+          FRUITS
+        </button>
+        <button [routerLink]="'/dairy'" mat-button style=
+          "background-color:#857d7d; color:#ffffff">
+          DAIRY
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card class="card" >
+      <mat-card-header>
+        <mat-card-title>Inverted Triangle</mat-card-title>
+      </mat-card-header>
+      <img class="img"mat-card-image src="../assets/body-mean/rombo invertido.png"class="img-male-inverted-triangle">
+      <mat-card-content>
+        <p>
+          The inverted triangle body has the shape of a "V", that is, it
+          is characterized by having much broader shoulders than the hips
+          and poorly defined curves.</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button [routerLink]="'/proteins'" mat-button style=
+          "background-color:#de265d; color:white">
+          PROTEINS
+        </button>
+        <button [routerLink]="'/vegetables'" mat-button style=
+          "background-color:#4ce141; color:white">
+          VEGETABLES
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </mat-grid-tile>
+
+
+  <mat-grid-tile>
+    <mat-card class="card" >
+      <mat-card-header>
+        <mat-card-title>Triangle</mat-card-title>
+      </mat-card-header>
+      <img class="img"mat-card-image src="../assets/body-mean/triangulo.png"class="img-male-triangle">
+      <mat-card-content>
+        <p>
+          People with a triangle body tend to have more hips than shoulders
+          and chest. Voluminous hips, thighs and buttocks and less bust.</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button [routerLink]="'/fruits'" mat-button style=
+          "background-color:#e39121; color:white">
+          FRUITS
+        </button>
+        <button [routerLink]="'/grain'"mat-button style=
+          "background-color:#86682a; color:white">
+          GRAIN
+        </button>
+      </mat-card-actions>
+    </mat-card>
+
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card class="card" >
+      <mat-card-header>
+        <mat-card-title>Rectangle</mat-card-title>
+      </mat-card-header>
+      <img class="img"mat-card-image src="../assets/body-mean/triangulo.png"class="img-male-triangle">
+      <mat-card-content>
+        <p>
+          It is characterized by having equally wide shoulders, waist and hips.
+          The curves, therefore, are less pronounced in this type of figure,
+          so the chest and butt area tend to look flat.</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button [routerLink]="'/dairy'" mat-button style=
+          "background-color:#857d7d; color:#ffffff">
+          DAIRY
+        </button>
+        <button [routerLink]="'/proteins'" mat-button style=
+          "background-color:#de265d; color:white">
+          PROTEINS
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </mat-grid-tile>
+
+</mat-grid-list>
