@@ -1,0 +1,72 @@
+<body>
+<div class="container">
+  <h1 style="color: white" class="mat-title">Physical activity</h1>
+  <h1>How is your physical activity?</h1>
+  <h2 class="first-phrase">Please select which one fits better to you</h2>
+
+  <mat-grid-list cols="1" rowHeight="120px">
+    <mat-grid-tile  [rowspan]="1">
+      <button mat-raised-button class="example-card" routerLink="/home/activity">
+        <div style="width: 20%; float:right">
+          <img class="logo-image" src="./assets/page2.1.png">
+        </div>
+        <div style="width: 80%; float:left">
+          <h1>Sedentary</h1>
+          <h1>None or really low exercise</h1>
+        </div>
+      </button>
+    </mat-grid-tile>
+
+    <mat-grid-tile  [rowspan]="1">
+      <button mat-raised-button class="example-card" routerLink="/home/activity">
+        <div style="width: 20%; float:right">
+          <img class="logo-image" src="./assets/page2.2.png">
+        </div>
+        <div style="width: 80%; float:left">
+          <h1>Light</h1>
+          <h1>Exercise from 1 to 2 days per week</h1>
+        </div>
+      </button>
+    </mat-grid-tile>
+
+    <mat-grid-tile  [rowspan]="1">
+      <button mat-raised-button class="example-card" routerLink="/home/activity">
+        <div style="width: 20%; float:right">
+          <img class="logo-image" src="./assets/page2.3.png">
+        </div>
+        <div style="width: 80%; float:left">
+          <h1>Medium</h1>
+          <h1>Exercise from 3 to 4 days per week</h1>
+        </div>
+      </button>
+    </mat-grid-tile>
+
+    <mat-grid-tile  [rowspan]="1">
+      <button mat-raised-button class="example-card" routerLink="/home/activity">
+        <div style="width: 20%; float:right">
+          <img class="logo-image" src="./assets/page2.4.png">
+        </div>
+        <div style="width: 80%; float:left">
+          <h1>High</h1>
+          <h1>Exercise from 5 to 6 days per week</h1>
+        </div>
+      </button>
+    </mat-grid-tile>
+
+    <mat-grid-tile  [rowspan]="1">
+      <button mat-raised-button class="example-card" routerLink="/home/activity">
+        <div style="width: 20%; float:right">
+          <img class="logo-image" src="./assets/page2.5.png">
+        </div>
+        <div style="width: 80%; float:left">
+          <h1>Athlete</h1>
+          <h1>Exercise from 5 to 6 days per week</h1>
+        </div>
+      </button>
+    </mat-grid-tile>
+
+
+  </mat-grid-list>
+  <br><br>
+</div>
+</body>
