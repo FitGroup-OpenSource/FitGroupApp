@@ -1,4 +1,4 @@
-
+<!-- 
 <mat-toolbar>
   <a class="navbar-brand" href="/">
     <div class="logo-image">
@@ -7,5 +7,32 @@
       <a class="nav-link" [routerLink]="'/menu'">Menu</a>
     </div>
   </a>
-</mat-toolbar>
+</mat-toolbar> -->
+
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-3 col-3">
+        <div class="logo">
+          <img src="assets/logoFitGroup.png" alt="logoFitGroup">
+        </div>
+      </div>
+      <div class="col-md-9 col-sm-9 col-9 text-end">
+        <div class="menu_icon" [class.menu_icon_Class]="menu_icon_variable" (click)="openMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu" [class.menuClass] ="menuVariable">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Help</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
 <router-outlet></router-outlet>
