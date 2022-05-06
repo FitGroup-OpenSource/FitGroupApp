@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RoutinesComponent implements OnInit {
 
-<<<<<<< Updated upstream
 
   breakpoint: number | undefined ;
 
@@ -20,11 +19,6 @@ export class RoutinesComponent implements OnInit {
 
   onResize({event}: { event: any }) {
     this.breakpoint = (event.target.innerWidth <= 800) ? 1 : 2;
-=======
-  constructor() { }
-
-  ngOnInit(): void {
->>>>>>> Stashed changes
   }
 
 }
