@@ -1,0 +1,34 @@
+mat-card img{
+    object-fit: cover; /*this makes the image in src fit to the size specified below*/
+    width: 100px; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
+    height: 80%;
+}
+
+.card-types-routine{
+    justify-content: center;
+    text-align: center;
+    background-color: #212121;
+}
+
+.card-image{
+    max-width: 300px;
+    max-height: 250px;
+    border-radius: 30px;
+}
+.button-card-image-container{
+    display:inline-block;
+    position:relative;
+}
+.start-routine{
+    position: absolute;
+    bottom:0.1em;
+    left:0.1em;
+    border-radius:1.5em;
+    color:black;
+    text-transform:uppercase;
+    padding:1em 1.5em;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+}

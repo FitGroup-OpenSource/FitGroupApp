@@ -1,0 +1,40 @@
+.abs-routine{
+    background-color: #212121;
+}
+.mat-list-base.inline-list {
+    justify-content: center;
+    display: grid;
+    min-width: 300px;
+    height: 700px;
+    background-color: #212121;
+    margin-top: 10px;
+}
+.mat-list-item .mat-card{
+    min-width: 300px;
+    min-height: 100px;
+    margin: auto;
+    background-color: #1C1C1C;
+}
+.mat-list-base .mat-list-item{
+    color: lightgray;
+}
+.title{
+    padding: 30px;
+}
+.type-title{
+    max-width: 500px;
+    background: gray;
+    justify-content: center;
+    padding-left: 30px;
+}
+h1 {
+    color: white;
+    font-weight: bold;
+}
+button.start-routine{
+
+    width: 64px;
+    height: 32px;
+    background: #005AEE;
+    border-radius: 9px;
+}
