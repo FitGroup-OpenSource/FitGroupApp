@@ -15,6 +15,7 @@ import {MatGridListModule} from "@angular/material/grid-list";
 import {PhysicalActivityComponent} from "./home/physical-activity/physical-activity.component";
 import {FooterComponent} from "./footer/footer.component";
 import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from "@angular/material/icon";
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import {MatButtonModule} from '@angular/material/button';
     MatGridListModule,
     MatCardModule,
     MatListModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   exports: [
