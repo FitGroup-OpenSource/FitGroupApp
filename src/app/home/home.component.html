@@ -1,1 +1,46 @@
-<p>home works!</p>
+<body>
+<div class="container">
+  <h1 style="color: white" class="mat-title">Objective</h1>
+  <h1>What are your objectives</h1>
+  <h2 class="first-phrase">Please select which one fits you better</h2>
+
+  <mat-grid-list cols="1" rowHeight="150px">
+    <mat-grid-tile  [rowspan]="1">
+      <button mat-raised-button class="example-card" routerLink="/home/activity">
+        <div style="width: 20%; float:left">
+          <img class="logo-image" src="./assets/home/page1.1.png">
+        </div>
+        <div style="width: 80%; float:right">
+          <h1>Lose Weight</h1>
+          <h1>Decrease the amount of fat on your body and keep your muscle mass</h1>
+        </div>
+      </button>
+    </mat-grid-tile>
+
+    <mat-grid-tile  [rowspan]="1">
+      <button mat-raised-button class="example-card" routerLink="/home/activity">
+        <div style="width: 20%; float:left">
+          <img class="logo-image" src="./assets/home/page1.3.png">
+        </div>
+        <div style="width: 80%; float:right">
+          <h1>Gain Muscles</h1>
+          <h1>Increase the size of your muscles and become stronger</h1>
+        </div>
+      </button>
+    </mat-grid-tile>
+
+    <mat-grid-tile  [rowspan]="1">
+      <button mat-raised-button class="example-card" routerLink="/home/activity">
+        <div style="width: 20%; float:left">
+          <img class="logo-image" src="./assets/home/page1.2.png">
+        </div>
+        <div style="width: 80%; float:right">
+          <h1>Lose Weight</h1>
+          <h1>Continue doing regular exercise to keep your body healthy</h1>
+        </div>
+      </button>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <br><br>
+</div>
+</body>
