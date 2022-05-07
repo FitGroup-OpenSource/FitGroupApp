@@ -8,7 +8,7 @@ import {ExerciseSupermanComponent} from "./routines/exercises/exercise-superman/
 
 const routes: Routes = [
   { path: 'home',component: HomeComponent},
-  { path:'', redirectTo: '/menu', pathMatch:'full'},
+  { path:'', redirectTo: '/home', pathMatch:'full'},
   {path: 'menu', component: MenuComponent},
   // { path: '**', component: PageNotFoundComponent }
   { path: 'routines', component: RoutinesComponent},
