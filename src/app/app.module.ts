@@ -13,6 +13,7 @@ import {MatListModule} from "@angular/material/list";
 import { ExerciseSupermanComponent } from './routines/exercises/exercise-superman/exercise-superman.component';
 import {MatGridListModule} from "@angular/material/grid-list";
 import {PhysicalActivityComponent} from "./home/physical-activity/physical-activity.component";
+import {FooterComponent} from "./footer/footer.component";
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import {PhysicalActivityComponent} from "./home/physical-activity/physical-activ
     RoutinesComponent,
     AbsRoutineComponent,
     ExerciseSupermanComponent,
-      PhysicalActivityComponent
+    PhysicalActivityComponent,
+    FooterComponent
   ],
   imports: [
     RoutingModule,
@@ -34,6 +36,8 @@ import {PhysicalActivityComponent} from "./home/physical-activity/physical-activ
     MatListModule
   ],
   providers: [],
+  exports: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
