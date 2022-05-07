@@ -14,6 +14,7 @@ import { ExerciseSupermanComponent } from './routines/exercises/exercise-superma
 import {MatGridListModule} from "@angular/material/grid-list";
 import {PhysicalActivityComponent} from "./home/physical-activity/physical-activity.component";
 import {FooterComponent} from "./footer/footer.component";
+import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
@@ -33,7 +34,9 @@ import {FooterComponent} from "./footer/footer.component";
     MatToolbarModule,
     MatGridListModule,
     MatCardModule,
-    MatListModule
+    MatListModule,
+    MatCardModule,
+    MatButtonModule    
   ],
   providers: [],
   exports: [
