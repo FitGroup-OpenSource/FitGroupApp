@@ -7,13 +7,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MenuComponent } from './menu/menu.component';
 import {HomeComponent} from "./home/home.component";
 import {MatToolbarModule} from "@angular/material/toolbar";
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    MenuComponent
+    MenuComponent,
+    FooterComponent
   ],
   imports: [
     RoutingModule,
