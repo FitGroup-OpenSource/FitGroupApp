@@ -1,0 +1,12 @@
+.title{
+    padding: 30px;
+}
+.type-title{
+    max-width: 500px;
+    background: gray;
+    justify-content: center;
+    padding-left: 30px;
+}
+.abs-routine{
+    background-color: #212121;
+}
