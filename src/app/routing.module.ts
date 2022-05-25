@@ -5,6 +5,11 @@ import {RoutinesComponent} from "./routines/routines.component";
 import {AbsRoutineComponent} from "./routines/types-routines/abs-routine/abs-routine.component";
 import {ExerciseSupermanComponent} from "./routines/exercises/exercise-superman/exercise-superman.component";
 import {PhysicalActivityComponent} from "./home/physical-activity/physical-activity.component";
+import {NutritionComponent} from "./nutrition/nutrition.component";
+import {FoodPreferenceComponent} from "./nutrition/food-preference/food-preference.component";
+import {BMIComponent} from "./nutrition/bmi/bmi.component";
+import {ScheduleComponent} from "./nutrition/schedule/schedule.component";
+
 
 const routes: Routes = [
   { path: 'home',component: HomeComponent},
@@ -13,7 +18,11 @@ const routes: Routes = [
   { path: 'routines', component: RoutinesComponent},
   { path: 'abs-routine', component: AbsRoutineComponent},
   { path: 'exercise-superman', component: ExerciseSupermanComponent},
-  { path: 'physical-activity', component: PhysicalActivityComponent}
+  { path: 'physical-activity', component: PhysicalActivityComponent},
+  { path: 'nutrition', component: NutritionComponent},
+  { path: 'food-preference', component: FoodPreferenceComponent},
+  { path: 'bmi', component: BMIComponent},
+  { path: 'schedule', component: ScheduleComponent} 
 
 
 ];
