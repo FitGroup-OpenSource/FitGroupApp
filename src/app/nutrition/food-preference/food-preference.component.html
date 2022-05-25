@@ -3,23 +3,23 @@
         <div class="welcome-message">
             <p class="food-message">Food! 🥑</p>
             <p class="select1-message">Please, select which one fits you better</p>
-        </div> 
+        </div>
 
 
         <div class="row food-preference">
             <p class="select2-message">Select the one that fits you better</p>
 
-            <mat-card>
+            <mat-card [routerLink]="'/schedule'">
                 <p class="card-title">Vegan</p>
                 <img src="../../../assets/nutrition/food-preference/vegan.png" class="card-image">
             </mat-card>
 
-            <mat-card>
+            <mat-card [routerLink]="'/schedule'">
                 <p class="card-title">Vegetarian</p>
                 <img src="../../../assets/nutrition/food-preference/vegetarian.png" class="card-image">
             </mat-card>
 
-            <mat-card>
+            <mat-card [routerLink]="'/schedule'">
                 <p class="card-title">Carnivorous</p>
                 <img src="../../../assets/nutrition/food-preference/carnivorous.png" class="card-image">
             </mat-card>
