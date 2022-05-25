@@ -42,7 +42,7 @@ body {
     width: 100%;
     margin: auto;
   }
-  
+
   .example-full-width {
     width: 100%;
   }
@@ -56,4 +56,6 @@ body {
   .bmi-result img{
       width: 20rem;
       margin: auto;
+      cursor: pointer;
   }
+

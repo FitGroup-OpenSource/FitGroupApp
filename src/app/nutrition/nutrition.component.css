@@ -41,7 +41,9 @@ body {
   margin: 20px;
   cursor: pointer;
 }
-
+.card-gender:hover {
+  box-shadow: 0px 0px 5px 0px gray;
+}
 .card-title{
   font-size: 1.5rem;
   font-weight: 500;
@@ -61,6 +63,12 @@ body {
   align-items: center;
   margin-left: 80%;
   justify-content: center;
+  cursor: pointer;
+
+}
+
+.card-extra-option:hover {
+  box-shadow: 0px 0px 5px 0px gray;
 }
 
 @media all and (max-width: 767px) {
@@ -69,4 +77,8 @@ body {
   }
 }
 
+.button{
+  display:inline-block;
+  position:relative;
+}
 
