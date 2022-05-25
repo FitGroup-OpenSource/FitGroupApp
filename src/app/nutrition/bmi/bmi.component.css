@@ -1,0 +1,59 @@
+body {
+    background-color: #212121;
+    margin: 0%;
+    padding: 0%;
+    color: white;
+}
+
+.title-message{
+    text-align: center;
+}
+
+.title-message-title{
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0 0 0;
+}
+
+.title-message-bmi{
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.explanation-message-content{
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin: 12px;
+}
+
+
+/* INPUT FIELDS */
+
+.input-fields{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 300px;
+    width: 100%;
+    margin: auto;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  .bmi-result{
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  }
+
+  .bmi-result img{
+      width: 20rem;
+      margin: auto;
+  }
