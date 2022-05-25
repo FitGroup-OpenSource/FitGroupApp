@@ -1,0 +1,71 @@
+body {
+  background-color: #212121;
+  margin: 0%;
+  padding: 0%;
+  color: white;
+}
+
+.welcome-message {
+  text-align: center;
+  justify-content: center;
+}
+
+.hello-message {
+  font-weight: bolder;
+  font-size: 3.5rem;
+}
+
+.beginning-message {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.selector-message {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.gender{
+  justify-content: center;
+}
+
+.card-gender{
+  background-color: #272424;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 10%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: white;
+  margin: 20px;
+}
+
+.card-title{
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.card-image{
+  width: 75%;
+}
+
+.card-extra-option{
+  width: 10rem;
+  color: white;
+  background-color: #272424;
+  border-radius: 15%;
+  text-align: center;
+  align-items: center;
+  margin-left: 80%;
+  justify-content: center;
+}
+
+@media all and (max-width: 767px) {
+  .card-extra-option{
+    margin: auto;
+  }
+}
+
+
