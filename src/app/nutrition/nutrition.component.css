@@ -39,6 +39,7 @@ body {
   align-items: center;
   color: white;
   margin: 20px;
+  cursor: pointer;
 }
 
 .card-title{
