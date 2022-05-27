@@ -5,6 +5,8 @@ import {RoutinesComponent} from "./routines/routines.component";
 import {AbsRoutineComponent} from "./routines/types-routines/abs-routine/abs-routine.component";
 import {ExerciseSupermanComponent} from "./routines/exercises/exercise-superman/exercise-superman.component";
 import {PhysicalActivityComponent} from "./home/physical-activity/physical-activity.component";
+import {LoginComponent} from "./login/login.component";
+import {RegisterComponent} from "./register/register.component";
 
 const routes: Routes = [
   { path: 'home',component: HomeComponent},
@@ -13,7 +15,9 @@ const routes: Routes = [
   { path: 'routines', component: RoutinesComponent},
   { path: 'abs-routine', component: AbsRoutineComponent},
   { path: 'exercise-superman', component: ExerciseSupermanComponent},
-  { path: 'physical-activity', component: PhysicalActivityComponent}
+  { path: 'physical-activity', component: PhysicalActivityComponent},
+  { path: 'login', component: LoginComponent},
+  { path: 'register', component: RegisterComponent}
 
 
 ];

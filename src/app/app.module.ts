@@ -16,6 +16,8 @@ import {PhysicalActivityComponent} from "./home/physical-activity/physical-activ
 import {FooterComponent} from "./footer/footer.component";
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from "@angular/material/icon";
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import {MatIconModule} from "@angular/material/icon";
     AbsRoutineComponent,
     ExerciseSupermanComponent,
     PhysicalActivityComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     RoutingModule,
