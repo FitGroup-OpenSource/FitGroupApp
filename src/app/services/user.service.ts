@@ -47,7 +47,7 @@ export class UserService {
     .pipe(retry(2), catchError(this.handleError));
   }
 
-  getByEmail(email:string){
+  getByEmail(email:string): Observable<IUser[]>{
     return this.http
       .get<IUser[]>(`${this.basePath}?email=${email}`, this.httpOptions)
       .pipe(retry(2), catchError(this.handleError))
