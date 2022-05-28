@@ -6,11 +6,12 @@ import {
 import { catchError, Observable, retry, throwError } from 'rxjs';
 import { Injectable } from '@angular/core';
 import {IUser} from "../interfaces/user.interface";
+
 @Injectable({
   providedIn: 'root',
 })
 export class UserService {
-  //IRoutine EndPoint
+  //IUser EndPoint
   basePath = 'https://my-json-server.typicode.com/FitGroup-OpenSource/fitgroupdb/users';
 
   //Http
@@ -45,4 +46,11 @@ export class UserService {
     return this.http.get<IUser[]>(this.basePath,this.httpOptions)
     .pipe(retry(2), catchError(this.handleError));
   }
+
+  getByEmail(email:string){
+    return this.http
+      .get<IUser[]>(`${this.basePath}?email=${email}`, this.httpOptions)
+      .pipe(retry(2), catchError(this.handleError))
+  }
+
 }
