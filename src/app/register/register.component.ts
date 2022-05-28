@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup} from "@angular/forms";
+import {UserService} from "../services/user.service";
 
 @Component({
   selector: 'app-register',
@@ -9,7 +10,7 @@ import {FormBuilder, FormGroup} from "@angular/forms";
 export class RegisterComponent implements OnInit {
 
   registerForm: FormGroup = new FormGroup({});
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private userServices: UserService) {
     this.registerForm = this.fb.group({
       firstName:'',
       lastName:'',
@@ -22,10 +23,17 @@ export class RegisterComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.userServices.getAll().subscribe(response=>{
+      console.log(response);
+    })
   }
 
   submit() {
     console.log(this.registerForm.value);
+    this.userServices.create(this.registerForm.value).subscribe(response=>{
+      console.log(response);
+    })
   }
+
 
 }
