@@ -1,0 +1,16 @@
+:host {
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #222222;
+}
+section {
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.login-card{
+  background-color: #282d32;
+  color: #ffffff;
+}
