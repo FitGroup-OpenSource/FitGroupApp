@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup} from "@angular/forms";
 import {UserService} from "../services/user.service";
 import {Router} from "@angular/router";
+import {IUser} from "../interfaces/user.interface";
 
 @Component({
   selector: 'app-login',
@@ -9,13 +10,14 @@ import {Router} from "@angular/router";
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
+  userData: IUser;
   loginForm: FormGroup = new FormGroup({});
   constructor(private fb: FormBuilder, private userService:UserService, private router:Router) {
     this.loginForm = this.fb.group({
       email:'',
       password:''
     });
+    this.userData={} as IUser;
   }
 
   ngOnInit(): void {

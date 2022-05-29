@@ -34,15 +34,15 @@ export class ExercisesServices {
 		);
 	}
 
-	getAll(): Observable<IExercise> {
+	getAll(): Observable<IExercise[]> {
 		return this.http
-			.get<IExercise>(this.basePath, this.httpOptions)
+			.get<IExercise[]>(this.basePath, this.httpOptions)
 			.pipe(retry(2), catchError(this.handleError));
 
 	}
-	getAllById(): Observable<IExercise> {
+	getAllById(id:any): Observable<IExercise[]> {
 		return this.http
-			.get<IExercise>(this.basePath, this.httpOptions)
+			.get<IExercise[]>(`${this.basePath}?id=${id}`, this.httpOptions)
 			.pipe(retry(2), catchError(this.handleError))
 	}
 

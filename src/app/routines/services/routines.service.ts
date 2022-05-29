@@ -4,7 +4,7 @@ import {
 	HttpHeaders,
 } from '@angular/common/http';
 import { catchError, Observable, retry, throwError } from 'rxjs';
-import {IRoutine} from "../model/IRoutine";
+import {IRoutine} from "../pages/model/IRoutine";
 import { Injectable } from '@angular/core';
 @Injectable({
 	providedIn: 'root',

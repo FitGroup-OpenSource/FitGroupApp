@@ -4,7 +4,7 @@
       <div class="card-wrapper">
         <div class="card fat login-card">
           <div class="card-body">
-            <h4 class="card-title">Register</h4>
+            <h1 class="card-title">Register</h1>
             <form [formGroup]="registerForm" class="my-login-validation" (ngSubmit)="submit()">
               <div class="form-group">
                 <label>First Name</label>
@@ -13,6 +13,7 @@
                   Name is invalid
                 </div>
               </div>
+              <br>
 
               <div class="form-group">
                 <label> Last Name
@@ -22,7 +23,7 @@
                   Last Name is required
                 </div>
               </div>
-
+              <br>
               <div class="form-group">
                 <label>Country</label>
                 <input matInput formControlName="country" type="text" class="form-control" name="country" value="" required autofocus>
@@ -30,7 +31,7 @@
                   Country is invalid
                 </div>
               </div>
-
+              <br>
               <div class="form-group">
                 <label>City</label>
                 <input matInput formControlName="city" type="text" class="form-control" name="city" value="" required autofocus>
@@ -38,15 +39,15 @@
                   City is invalid
                 </div>
               </div>
-
+              <br>
               <div class="form-group">
                 <label>Phone Number</label>
-                <input matInput formControlName="phoneNumber" type="text" class="form-control" name="phoneNumber" value="" required autofocus>
+                <input matInput formControlName="phoneNumber" type="number" class="form-control" name="phoneNumber" value="" required autofocus>
                 <div class="invalid-feedback">
                   Phone Number is invalid
                 </div>
               </div>
-
+              <br>
               <div class="form-group">
                 <label>E-Mail</label>
                 <input matInput formControlName="email" type="email" class="form-control" name="email" value="" required autofocus>
@@ -54,7 +55,7 @@
                   Email is invalid
                 </div>
               </div>
-
+              <br>
               <div class="form-group">
                 <label>Password</label>
                 <input matInput formControlName="password" type="text" class="form-control" name="password" value="" required autofocus>
@@ -62,12 +63,13 @@
                   Password is invalid
                 </div>
               </div>
-
+              <br>
               <div class="form-group m-0">
                 <button type="submit" class="btn btn-primary btn-block">
                   Sign Up
                 </button>
               </div>
+              <br>
               <div class="mt-4 text-center">
                 Do you have an account? <a routerLink='/login'>Login</a>
               </div>

@@ -6,11 +6,11 @@ import { RoutingModule } from './routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {HomeComponent} from "./home/home.component";
 import {MatToolbarModule} from "@angular/material/toolbar";
-import { RoutinesComponent } from './routines/routines.component';
+import { RoutinesComponent } from './routines/pages/routines/routines.component';
 import {MatCardModule} from "@angular/material/card";
-import { AbsRoutineComponent } from './routines/types-routines/abs-routine/abs-routine.component';
+import { AbsRoutineComponent } from './routines/pages/types-routines/abs-routine/abs-routine.component';
 import {MatListModule} from "@angular/material/list";
-import { ExerciseSupermanComponent } from './routines/exercises/exercise-superman/exercise-superman.component';
+import { ExerciseRoutineComponent } from './routines/exercises/pages/exercise-routine/exercise-routine.component';
 import {MatGridListModule} from "@angular/material/grid-list";
 import {PhysicalActivityComponent} from "./home/physical-activity/physical-activity.component";
 import {FooterComponent} from "./footer/footer.component";
@@ -29,7 +29,7 @@ import {HttpClientModule} from "@angular/common/http";
     HomeComponent,
     RoutinesComponent,
     AbsRoutineComponent,
-    ExerciseSupermanComponent,
+    ExerciseRoutineComponent,
     PhysicalActivityComponent,
     FooterComponent,
     LoginComponent,

@@ -10,12 +10,12 @@
         <mat-card>
             <mat-grid-list cols="2">
                 <mat-grid-tile>
-                    <img src="./assets/routines/exercises/exercise-superman.png" alt="Superman Exercise">
+                    <img src="../../../../../assets/routines/exercises/exercise-superman.png" alt="Superman Exercise">
                 </mat-grid-tile>
                 <mat-grid-tile>
                     <mat-list>
                         <mat-list-item class="text-h5 mb-1 pa-5 text-white">
-                        SUPERMAN
+                        {{this.exerciseData1.name}}
                         </mat-list-item>
                         <mat-list-item class="mb-1 pa-5 text-grey">
                             3 minutes
@@ -24,7 +24,7 @@
                 </mat-grid-tile>
             </mat-grid-list>
             <mat-card-actions align="end">
-                <button mat-button class="button start-routine" [routerLink]="'/exercise-superman'">START</button>
+                <button mat-button class="button start-routine"  [routerLink]="['/exercise-routine',exerciseId1]">START</button>
             </mat-card-actions>
         </mat-card>
     </mat-list-item>
@@ -33,12 +33,12 @@
         <mat-card>
             <mat-grid-list cols="2">
                 <mat-grid-tile>
-                    <img src="./assets/routines/exercises/exercise-plank.png" alt="Plank Exercise">
+                    <img src="../../../../../assets/routines/exercises/exercise-plank.png" alt="Plank Exercise">
                 </mat-grid-tile>
                 <mat-grid-tile>
                     <mat-list>
                         <mat-list-item class="text-h5 mb-1 pa-5 text-white">
-                            PLANK
+                            {{this.exerciseData2.name}}
                         </mat-list-item>
                         <mat-list-item class="mb-1 pa-5 text-grey">
                             3 seconds
@@ -47,7 +47,7 @@
                 </mat-grid-tile>
             </mat-grid-list>
             <mat-card-actions align="end">
-                <button mat-button class="button start-routine">START</button>
+                <button mat-button class="button start-routine"  [routerLink]="['/exercise-routine',exerciseId2]">START</button>
             </mat-card-actions>
         </mat-card>
     </mat-list-item>
@@ -56,12 +56,12 @@
         <mat-card>
             <mat-grid-list cols="2">
                 <mat-grid-tile>
-                    <img src="./assets/routines/exercises/exercise-crisscross.png" alt="Crisscross Exercise">
+                    <img src="../../../../../assets/routines/exercises/exercise-crisscross.png" alt="Crisscross Exercise">
                 </mat-grid-tile>
                 <mat-grid-tile>
                     <mat-list>
                         <mat-list-item class="text-h5 mb-1 pa-5 text-white">
-                            CRISSCROSS
+                            {{this.exerciseData3.name}}
                         </mat-list-item>
                         <mat-list-item class="mb-1 pa-5 text-grey">
                             3 seconds
@@ -70,7 +70,7 @@
                 </mat-grid-tile>
             </mat-grid-list>
             <mat-card-actions align="end">
-                <button mat-button class="button start-routine">START</button>
+                <button mat-button class="button start-routine"  [routerLink]="['/exercise-routine',exerciseId3]">START</button>
             </mat-card-actions>
         </mat-card>
     </mat-list-item>

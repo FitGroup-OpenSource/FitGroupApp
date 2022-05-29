@@ -1,14 +1,13 @@
 <div class="abs-routine">
     <div class="title">
         <mat-card class="type-title">
-            <h1>Abdominal Routine</h1>
+            <h1>{{this.exerciseData.name}}</h1>
         </mat-card>
     </div>
     <div class="exercise">
         <mat-grid-list cols="2">
             <mat-grid-tile class="embed-container">
-                    <iframe width="500" height="300" src="https://www.youtube.com/embed/67rgxYNKbZY" allowfullscreen></iframe>
-
+                    <iframe width="500" height="300" [src]="safeSrc" allowfullscreen></iframe>
             </mat-grid-tile>
             <mat-grid-tile>
                 <div class="container-image">
