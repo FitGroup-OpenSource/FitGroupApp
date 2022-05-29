@@ -23,9 +23,8 @@ const routes: Routes = [
   { path: 'nutrition', component: NutritionComponent},
   { path: 'food-preference', component: FoodPreferenceComponent},
   { path: 'bmi', component: BMIComponent},
-  { path: 'schedule', component: ScheduleComponent}
+  { path: 'schedule', component: ScheduleComponent},
   { path: 'exercise-routine/:exercise', component: ExerciseRoutineComponent},
-  { path: 'physical-activity', component: PhysicalActivityComponent},
   { path: 'login', component: LoginComponent},
   { path: 'register', component: RegisterComponent}
 
