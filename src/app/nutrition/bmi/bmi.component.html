@@ -1,0 +1,63 @@
+<body>
+<div class="container">
+  <!-- TITLE -->
+  <div class="title-message">
+    <p class="title-message-title">Let’s see how is your BMI ⚖️</p>
+    <p class="title-message-bmi">(Body mass index)</p>
+  </div>
+
+  <!-- EXPLANATION -->
+  <div class="explanaition-message">
+    <p class="explanation-message-content">Body mass index. A measure that relates body weight to height. BMI is sometimes used to measure total body fat and whether a person is a healthy weight. Excess body fat is linked to an increased risk of some diseases including heart disease and some cancers. Also called body mass index.</p>
+  </div>
+
+  <!-- INPUT FIELDS -->
+  <div class="input-fields">
+    <form class="example-form">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Age</mat-label>
+        <input type="age" matInput [formControl]="emailFormControl" placeholder="Ex. 18">
+        <mat-error *ngIf="emailFormControl.hasError('age') && !emailFormControl.hasError('required')">
+          Please enter a valid age
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          Age is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+    </form>
+
+
+    <form class="example-form">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Height</mat-label>
+        <input type="height" matInput [formControl]="emailFormControl" placeholder="Ex. 18">
+        <mat-error *ngIf="emailFormControl.hasError('height') && !emailFormControl.hasError('required')">
+          Please enter a valid height
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          Height is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+    </form>
+
+
+    <form class="example-form">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Weight</mat-label>
+        <input type="weight" matInput [formControl]="emailFormControl" placeholder="Ex. 18">
+        <mat-error *ngIf="emailFormControl.hasError('weight') && !emailFormControl.hasError('required')">
+          Please enter a valid weight
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          Weight is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+    </form>
+  </div>
+
+
+  <div class="bmi-result" [routerLink]="'/food-preference'">
+    <img src="../../../assets/nutrition/bmi/bmi-graphic.png" alt="">
+  </div>
+</div>
+</body>
