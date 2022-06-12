@@ -3,6 +3,8 @@ import {FormBuilder, FormGroup} from "@angular/forms";
 import {UserService} from "../services/user.service";
 import {Router} from "@angular/router";
 import {IUser} from "../interfaces/user.interface";
+import {LoginMessageComponent} from "./login-message/login-message.component";
+import {MatDialog} from "@angular/material/dialog";
 
 @Component({
   selector: 'app-login',
@@ -12,12 +14,16 @@ import {IUser} from "../interfaces/user.interface";
 export class LoginComponent implements OnInit {
   userData: IUser;
   loginForm: FormGroup = new FormGroup({});
-  constructor(private fb: FormBuilder, private userService:UserService, private router:Router) {
+  constructor(private fb: FormBuilder, private userService:UserService, private router:Router,public dialog: MatDialog) {
     this.loginForm = this.fb.group({
       email:'',
       password:''
     });
     this.userData={} as IUser;
+  }
+
+  openDialog() {
+    this.dialog.open(LoginMessageComponent);
   }
 
   ngOnInit(): void {
@@ -37,10 +43,12 @@ export class LoginComponent implements OnInit {
         }
         else{
           console.log("Contraseña incorrecta");
+          this.openDialog();
         }
       }
       else{
         console.log("Usuario no registrado");
+        this.openDialog();
       }
     });
   }

@@ -28,7 +28,9 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {HttpClientModule} from "@angular/common/http";
-
+import {MatDialogModule} from '@angular/material/dialog';
+import { LoginMessageComponent } from './login/login-message/login-message.component';
+import { RegisterMessageComponent } from './register/register-message/register-message.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,6 +47,8 @@ import {HttpClientModule} from "@angular/common/http";
     FooterComponent,
     LoginComponent,
     RegisterComponent,
+    LoginMessageComponent,
+    RegisterMessageComponent,
   ],
   imports: [
     RoutingModule,
@@ -61,7 +65,8 @@ import {HttpClientModule} from "@angular/common/http";
     ReactiveFormsModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDialogModule
   ],
   providers: [],
   exports: [
