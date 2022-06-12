@@ -11,14 +11,18 @@
 
             </mat-grid-tile>
             <mat-grid-tile>
-                <div class="container-image">
-                    <img width="200"
-                            src="../../../assets/routines/icons/icon-timer.png"
-                            class="objectives-images"
-                            alt="Counter Timer Icon"/>
+                <div class="clock">
+                    <input class="number" type="text" maxlength="2" value="00"><span>min</span><input class="number" type="text" maxlength="2" value="00"><span>sec</span>
+                </div>
+                <div class="buttons">
+                    <button id="play" onclick="startTimer()"></button>
+                    <button id="stop" onclick="stopTimer()"></button>
                 </div>
             </mat-grid-tile>
         </mat-grid-list>
     </div>
     <br><br>
+
+    <script src="script.js"></script>
 </div>
+
