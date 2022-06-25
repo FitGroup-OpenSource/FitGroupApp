@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {NutritionalPlansService} from "../schedule/services/nutritional-plans.service";
+import {FoodsService} from "../schedule/services/foods.service";
 
 @Component({
   selector: 'app-food-preference',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FoodPreferenceComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private nutritionalPlansService: NutritionalPlansService, private foodsService: FoodsService) {
+    this.accountId=1;
+  }
+  accountId: number;
   ngOnInit(): void {
+
   }
 
 }

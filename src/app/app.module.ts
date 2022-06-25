@@ -23,7 +23,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from "@angular/material/icon";
 import { FoodPreferenceComponent } from './nutrition/food-preference/food-preference.component';
 import { BMIComponent } from './nutrition/bmi/bmi.component';
-import { ScheduleComponent } from './nutrition/schedule/schedule.component';
+import { ScheduleComponent } from './nutrition/schedule/pages/schedule-nutrition/schedule.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import {MatFormFieldModule} from '@angular/material/form-field';

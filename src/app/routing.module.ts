@@ -10,7 +10,7 @@ import {RegisterComponent} from "./register/register.component";
 import {NutritionComponent} from "./nutrition/nutrition.component";
 import {FoodPreferenceComponent} from "./nutrition/food-preference/food-preference.component";
 import {BMIComponent} from "./nutrition/bmi/bmi.component";
-import {ScheduleComponent} from "./nutrition/schedule/schedule.component";
+import {ScheduleComponent} from "./nutrition/schedule/pages/schedule-nutrition/schedule.component";
 
 
 const routes: Routes = [
@@ -23,7 +23,7 @@ const routes: Routes = [
   { path: 'nutrition', component: NutritionComponent},
   { path: 'food-preference', component: FoodPreferenceComponent},
   { path: 'bmi', component: BMIComponent},
-  { path: 'schedule', component: ScheduleComponent},
+  { path: 'schedule/nutricional-plan/:account', component: ScheduleComponent},
   { path: 'exercise-routine/:exercise', component: ExerciseRoutineComponent},
   { path: 'login', component: LoginComponent},
   { path: 'register', component: RegisterComponent}
