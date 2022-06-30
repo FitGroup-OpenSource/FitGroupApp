@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FoodsService} from "../../services/foods.service";
 
 @Component({
   selector: 'app-schedule',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScheduleComponent implements OnInit {
 
-  constructor() { }
+  plans:any;
+  constructor(private foodsService: FoodsService) {
+    this.getAllNutritionalPlans();
+  }
 
   ngOnInit(): void {
+  }
+  getAllNutritionalPlans(){
+    this.foodsService.getAll().subscribe(response=>{
+      this.plans=response;
+    });
   }
 
 }

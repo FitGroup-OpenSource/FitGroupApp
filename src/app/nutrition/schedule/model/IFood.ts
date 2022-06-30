@@ -6,4 +6,5 @@ export interface IFood {
 	protein: number,
 	carbohydrates: number,
 	fats: number
+
 }

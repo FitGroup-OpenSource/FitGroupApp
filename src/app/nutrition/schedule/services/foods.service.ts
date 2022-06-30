@@ -11,7 +11,7 @@ import { Injectable } from '@angular/core';
 })
 export class FoodsService {
 	//IFood EndPoint
-	basePath = 'https://my-json-server.typicode.com/FitGroup-OpenSource/fitgroupdb/foods';
+	basePath = 'http://localhost:8080/api/nutritional-plan';
 
 	//Http
 	httpOptions = {
@@ -34,10 +34,9 @@ export class FoodsService {
 		);
 	}
 
-	getAll(): Observable<IFood[]> {
+	getAll() {
 		return this.http
-			.get<IFood[]>(this.basePath, this.httpOptions)
-			.pipe(retry(2), catchError(this.handleError));
+			.get(this.basePath);
 
 	}
 	getAllById(id:any): Observable<IFood[]> {
