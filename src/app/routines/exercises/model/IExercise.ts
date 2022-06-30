@@ -1,6 +1,8 @@
 export interface IExercise {
+	createdAt: string,
+	updatedAt:string,
 	id: number,
 	name:string,
-	difficulty_exercises_id: number,
+	difficulty: string,
 	url:string
 }

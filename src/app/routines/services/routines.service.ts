@@ -11,7 +11,7 @@ import { Injectable } from '@angular/core';
 })
 export class RoutinesServices {
 	//IRoutine EndPoint
-	basePath = 'https://my-json-server.typicode.com/FitGroup-OpenSource/fitgroupdb/routines';
+	basePath = 'http://localhost:8080/api/routines';
 
 	//Http
 	httpOptions = {

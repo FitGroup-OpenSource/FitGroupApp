@@ -11,7 +11,7 @@ import { Injectable } from '@angular/core';
 })
 export class ExercisesServices {
 	//IExercise EndPoint
-	basePath = 'https://my-json-server.typicode.com/FitGroup-OpenSource/fitgroupdb/exercises';
+	basePath = 'http://localhost:8080/api/exercises';
 
 	//Http
 	httpOptions = {
@@ -40,10 +40,8 @@ export class ExercisesServices {
 			.pipe(retry(2), catchError(this.handleError));
 
 	}
-	getAllById(id:any): Observable<IExercise[]> {
-		return this.http
-			.get<IExercise[]>(`${this.basePath}?id=${id}`, this.httpOptions)
-			.pipe(retry(2), catchError(this.handleError))
+	getAllById(id:any) {
+		return this.http.get(`${this.basePath}/${id}`);
 	}
 
 	//Delete IExercise

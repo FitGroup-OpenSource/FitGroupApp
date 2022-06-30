@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup} from "@angular/forms";
-import {UserService} from "../services/user.service";
+import {UserService} from "../../services/user.service";
 import {MatDialog} from "@angular/material/dialog";
 
 import {RegisterMessageComponent} from "./register-message/register-message.component";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-register',
@@ -13,22 +14,16 @@ import {RegisterMessageComponent} from "./register-message/register-message.comp
 export class RegisterComponent implements OnInit {
 
   registerForm: FormGroup = new FormGroup({});
-  constructor(private fb: FormBuilder, private userServices: UserService,public dialog: MatDialog) {
+  constructor(private fb: FormBuilder, private userServices: UserService,public dialog: MatDialog, private router:Router) {
     this.registerForm = this.fb.group({
-      firstName:'',
-      lastName:'',
-      country:'',
-      city:'',
-      phoneNumber:'',
+      username:'',
       email:'',
       password:'',
     });
   }
 
   ngOnInit(): void {
-    this.userServices.getAll().subscribe(response=>{
-      console.log(response);
-    })
+    console.clear();
   }
 
   openDialog() {
@@ -36,11 +31,11 @@ export class RegisterComponent implements OnInit {
   }
 
   submit() {
-    console.log(this.registerForm.value);
-    this.userServices.create(this.registerForm.value).subscribe(response=>{
-      console.log(response);
-      this.openDialog();
-    })
+    this.userServices.registerUser(this.registerForm.getRawValue())
+        .subscribe(response=> {
+          console.clear();
+          this.router.navigate(['login'])
+        });
   }
 
 

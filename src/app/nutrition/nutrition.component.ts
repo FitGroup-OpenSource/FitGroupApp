@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {LoginMessageComponent} from "../login/login-message/login-message.component";
+import {LoginMessageComponent} from "../security/pages/login/login-message/login-message.component";
 import {MatDialog} from "@angular/material/dialog";
 
 

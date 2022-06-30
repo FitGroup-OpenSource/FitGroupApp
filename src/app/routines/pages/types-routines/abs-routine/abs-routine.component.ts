@@ -18,6 +18,7 @@ export class AbsRoutineComponent implements OnInit {
     this.exerciseId2=this.getRandomArbitrary(1,14);
     this.exerciseId3=this.getRandomArbitrary(1,14);
     this.getAllExercisesById();
+    console.clear();
   }
   exerciseData1: IExercise;
   exerciseData2: IExercise;
@@ -33,13 +34,14 @@ export class AbsRoutineComponent implements OnInit {
   }
   getAllExercisesById() {
     this.exercisesService.getAllById(this.exerciseId1).subscribe((response: any) => {
-      this.exerciseData1=response[0];
+      this.exerciseData1=response;
     });
     this.exercisesService.getAllById(this.exerciseId2).subscribe((response: any) => {
-      this.exerciseData2=response[0];
+      this.exerciseData2=response;
     });
     this.exercisesService.getAllById(this.exerciseId3).subscribe((response: any) => {
-      this.exerciseData3=response[0];
+      this.exerciseData3=response;
     });
+
   }
 }

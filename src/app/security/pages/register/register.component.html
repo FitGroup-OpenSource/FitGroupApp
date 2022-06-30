@@ -1,0 +1,58 @@
+<section class="h-100">
+  <div class="container h-100">
+    <div class="row justify-content-md-center h-100">
+      <div class="card-wrapper">
+        <div class="card fat login-card">
+          <div class="card-body">
+            <h1 class="card-title">Register</h1>
+            <form [formGroup]="registerForm" class="my-login-validation" (ngSubmit)="submit()">
+              <div class="form-group">
+                <label>Name</label>
+                <input matInput type="text" class="form-control" name="name" placeholder="Mariana Linares" required autofocus>
+                <div class="invalid-feedback">
+                  Name is invalid
+                </div>
+              </div>
+              <br>
+              <div class="form-group">
+                <label>Username</label>
+                <input matInput formControlName="username" type="text" class="form-control" name="username" placeholder="MarLina123" required autofocus>
+                <div class="invalid-feedback">
+                  Username is invalid
+                </div>
+              </div>
+              <br>
+
+              <div class="form-group">
+                <label>E-Mail</label>
+                <input matInput formControlName="email" type="email" class="form-control" name="email" placeholder="mar@gmail.com" required autofocus>
+                <div class="invalid-feedback">
+                  Email is invalid
+                </div>
+              </div>
+              <br>
+              <div class="form-group">
+                <label>Password</label>
+                <input matInput formControlName="password" type="text" class="form-control" name="password" required autofocus>
+                <div class="invalid-feedback">
+                  Password is invalid
+                </div>
+              </div>
+              <br>
+              <div class="form-group m-0">
+                <button type="submit" class="btn btn-primary btn-block">
+                  Sign Up
+                </button>
+              </div>
+              <br>
+              <div class="mt-4 text-center">
+                Do you have an account? <a routerLink='/login'>Login</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

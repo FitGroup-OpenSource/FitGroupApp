@@ -5,14 +5,14 @@ import {
 } from '@angular/common/http';
 import { catchError, Observable, retry, throwError } from 'rxjs';
 import { Injectable } from '@angular/core';
-import {IUser} from "../interfaces/user.interface";
+import {IUser} from "../model/IUser";
 
 @Injectable({
   providedIn: 'root',
 })
 export class UserService {
   //IUser EndPoint
-  basePath = 'https://my-json-server.typicode.com/FitGroup-OpenSource/fitgroupdb/users';
+  basePath = 'http://localhost:8080/api/v1/users/auth';
 
   //Http
   httpOptions = {
@@ -20,6 +20,14 @@ export class UserService {
   };
 
   constructor(private http: HttpClient) {}
+
+  loginUser(request: any) {
+    return this.http.post(`${this.basePath}/sign-in`,request);
+  }
+  registerUser(request: any) {
+    return this.http.post(`${this.basePath}/sign-up`,request);
+  }
+
 
   //Error
   handleError(error: HttpErrorResponse) {

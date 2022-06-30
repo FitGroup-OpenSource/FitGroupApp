@@ -24,13 +24,16 @@ import {MatIconModule} from "@angular/material/icon";
 import { FoodPreferenceComponent } from './nutrition/food-preference/food-preference.component';
 import { BMIComponent } from './nutrition/bmi/bmi.component';
 import { ScheduleComponent } from './nutrition/schedule/pages/schedule-nutrition/schedule.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './security/pages/login/login.component';
+import { RegisterComponent } from './security/pages/register/register.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import {HttpClientModule} from "@angular/common/http";
+import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import {MatDialogModule} from '@angular/material/dialog';
-import { LoginMessageComponent } from './login/login-message/login-message.component';
-import { RegisterMessageComponent } from './register/register-message/register-message.component';
+import { LoginMessageComponent } from './security/pages/login/login-message/login-message.component';
+import { RegisterMessageComponent } from './security/pages/register/register-message/register-message.component';
+import { CookieService } from 'ngx-cookie-service';
+import {TokenInterceptorService} from "./shared/services/token-interceptor.service";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -68,7 +71,7 @@ import { RegisterMessageComponent } from './register/register-message/register-m
     ReactiveFormsModule,
     MatDialogModule
   ],
-  providers: [],
+  providers: [{provide:HTTP_INTERCEPTORS,useClass:TokenInterceptorService, multi:true}],
   exports: [
   ],
   bootstrap: [AppComponent]

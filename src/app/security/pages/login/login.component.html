@@ -8,10 +8,7 @@
             <form [formGroup]="loginForm" class="my-login-validation" (ngSubmit)="submit()">
               <div class="form-group">
                   <label>E-mail</label>
-                  <input matInput formControlName="email" type="email" class="form-control" name="email" value="" required autofocus>
-                  <div class="invalid-feedback">
-                    Email is invalid
-                  </div>
+                  <input matInput formControlName="username" class="form-control" name="username" placeholder="Username" value="" required autofocus>
               </div>
               <br>
               <div class="form-group">
@@ -21,7 +18,7 @@
                   </a>
                 </label>
 
-                <input matInput formControlName="password" type="password" class="form-control" name="password" required data-eye>
+                <input matInput formControlName="password" type="password" class="form-control" name="password" placeholder="Password" required data-eye>
                 <div class="invalid-feedback">
                   Password is required
                 </div>
@@ -36,7 +33,7 @@
               <br>
               <div class="form-group m-0">
                 <button type="submit" class="btn btn-primary btn-block">
-                  Sign Up
+                  Sign In
                 </button>
               </div>
               <br>

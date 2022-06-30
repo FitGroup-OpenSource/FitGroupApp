@@ -20,7 +20,7 @@ export class ExerciseRoutineComponent implements OnInit {
     console.log(this.exerciseId);
     this.getAllExercisesById();
 
-    console.log(this.exerciseData);
+    // console.log(this.exerciseData);
   }
 
   ngOnInit(): void {
@@ -33,10 +33,10 @@ export class ExerciseRoutineComponent implements OnInit {
   // }
   getAllExercisesById() {
     this.exercisesService.getAllById(this.exerciseId).subscribe((response: any) => {
-      this.exerciseData=response[0];
+      this.exerciseData=response;
       this.safeSrc= this.sanitizer.bypassSecurityTrustResourceUrl(this.exerciseData.url);
+      console.clear();
     });
-
 
   }
 
