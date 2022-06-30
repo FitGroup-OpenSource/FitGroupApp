@@ -1,0 +1,137 @@
+body {
+    background-color: #212121;
+    margin: 0%;
+    padding: 0%;
+    color: white;
+}
+
+.date-message{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.row{
+    justify-content: center;
+    text-align: center;
+}
+
+.calories-card{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 1.8rem;
+}
+
+
+.card-title{
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: 500;
+
+}
+
+.card-content{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.grams-cards{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 20%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 1.8rem;
+    color: white;
+    background-color: #272424;
+}
+
+.calories-card, .grams-cards{
+    margin: 1rem;
+}
+
+.food-title{
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-left: 0%;
+}
+
+.food-content{
+    width: 15rem;
+    margin: 4rem, 0 , 4rem;
+}
+
+
+/* BREAKFAST */
+
+/* Contenedor */
+.food-breakfast{
+    margin-top: 2rem;
+}
+/* ------------------ */
+
+/* Food */
+.food-items{
+    width: 20rem;
+    margin: auto;
+    padding-top: 0.6rem;
+    text-align: left;
+}
+
+.food-items img{
+    width: 2.5rem;
+    margin-right: 2rem;
+}
+
+/* --------------- */
+
+.food-quantity{
+    width: 20rem;
+    margin: auto;
+    text-align: right;
+}
+
+.food-name, .food-kcal{
+    margin: 0;
+}
+
+.feeding-row{
+    margin-bottom: 1.2rem;
+}
+
+/* PREMIUM AD CARD */
+
+.premium-ad-card{
+    margin-top: 1.5rem;
+}
+
+.premium-ad{
+    width: 20rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    color: white;
+    background-color: rgb(97, 109, 0);
+}
+
+.premium-ad-text{
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.premium-ad-hightlighted{
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+}

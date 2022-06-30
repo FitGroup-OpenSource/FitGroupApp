@@ -1,0 +1,49 @@
+<section class="h-100">
+  <div class="container h-100">
+    <div class="row justify-content-md-center h-100">
+      <div class="card-wrapper">
+        <div class="card fat login-card">
+          <div class="card-body">
+            <h1 class="card-title">Login</h1>
+            <form [formGroup]="loginForm" class="my-login-validation" (ngSubmit)="submit()">
+              <div class="form-group">
+                  <label>E-mail</label>
+                  <input matInput formControlName="username" class="form-control" name="username" placeholder="Username" value="" required autofocus>
+              </div>
+              <br>
+              <div class="form-group">
+                <label>Password
+                  <a href="" class="float-right">
+                    Forgot Password?
+                  </a>
+                </label>
+
+                <input matInput formControlName="password" type="password" class="form-control" name="password" placeholder="Password" required data-eye>
+                <div class="invalid-feedback">
+                  Password is required
+                </div>
+              </div>
+              <br>
+              <div class="form-group">
+                <div class="custom-checkbox custom-control">
+                  <input type="checkbox" name="remember" id="remember" class="custom-control-input">
+                  <label for="remember" class="custom-control-label">Remember Me</label>
+                </div>
+              </div>
+              <br>
+              <div class="form-group m-0">
+                <button type="submit" class="btn btn-primary btn-block">
+                  Sign In
+                </button>
+              </div>
+              <br>
+              <div class="mt-4 text-center">
+                Don't have an account? <a routerLink='/register'>Create One</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

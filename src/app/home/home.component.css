@@ -23,7 +23,7 @@ body{
   bottom: 10px;
 }
 .container{
-  margin-left: 20%;
+  margin-left: 15%;
   margin-right: 20%;
   position: relative;
   top: 5%;
@@ -35,11 +35,11 @@ mat-grid-tile {
 .example-card {
   margin-bottom: 8px;
   margin-top: 8px;
-  width: 95%;
+  width: 78%;
   height: 80%;
   background-color: #363533
 }
 .content{
   position: relative;
-  left:20%; bottom: 50px;
+  left:5%; bottom: 50px;
 }
