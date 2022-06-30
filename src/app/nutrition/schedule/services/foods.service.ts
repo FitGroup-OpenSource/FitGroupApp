@@ -11,7 +11,7 @@ import { Injectable } from '@angular/core';
 })
 export class FoodsService {
 	//IFood EndPoint
-	basePath = 'http://localhost:8080/api/nutritional-plan';
+	basePath = 'https://fit-fitgroup.herokuapp.com/api/nutritional-plan';
 
 	//Http
 	httpOptions = {

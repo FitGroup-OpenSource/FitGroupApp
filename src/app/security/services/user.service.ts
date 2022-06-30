@@ -12,7 +12,7 @@ import {IUser} from "../model/IUser";
 })
 export class UserService {
   //IUser EndPoint
-  basePath = 'http://localhost:8080/api/v1/users/auth';
+  basePath = 'https://fit-fitgroup.herokuapp.com/api/v1/users/auth';
 
   //Http
   httpOptions = {

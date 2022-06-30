@@ -11,7 +11,7 @@ import { Injectable } from '@angular/core';
 })
 export class ExercisesServices {
 	//IExercise EndPoint
-	basePath = 'http://localhost:8080/api/exercises';
+	basePath = 'https://fit-fitgroup.herokuapp.com/api/exercises';
 
 	//Http
 	httpOptions = {

@@ -11,7 +11,7 @@ import { Injectable } from '@angular/core';
 })
 export class RoutinesServices {
 	//IRoutine EndPoint
-	basePath = 'http://localhost:8080/api/routines';
+	basePath = 'https://fit-fitgroup.herokuapp.com/api/routines';
 
 	//Http
 	httpOptions = {
